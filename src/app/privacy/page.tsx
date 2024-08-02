@@ -8,7 +8,7 @@ export default function Privacy() {
             Política de Privacidad de Roxy Migurdia
           </p>
           <p className="mb-4">
-            1. Introducción: La privacidad de tus datos es importante para nosotros. Esta Política de Privacidad explica cómo recopilamos, usamos y protegemos la información obtenida a través del uso del bot de Discord "Roxy Migurdia" (en adelante, "el Bot").
+            1. Introducción: La privacidad de tus datos es importante para nosotros. Esta Política de Privacidad explica cómo recopilamos, usamos y protegemos la información obtenida a través del uso del bot de Discord &quot;Roxy Migurdia&quot; (en adelante, &quot;el Bot&quot;).
           </p>
           <p className="mb-4">
             2. Información que Recopilamos: Podemos recopilar información como mensajes enviados, ID de usuario, nombres de usuario y otros datos disponibles en el perfil del usuario a través de la API de Discord, de acuerdo con sus términos de servicio.

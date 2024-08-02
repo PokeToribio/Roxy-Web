@@ -8,7 +8,7 @@ export default function Terms() {
             Términos de Servicio de Roxy Migurdia
           </p>
           <p className="mb-4">
-            1. Aceptación de los Términos: Al utilizar el bot de Discord "Roxy Migurdia" (en adelante, "el Bot"), aceptas estos Términos de Servicio. Si no estás de acuerdo con alguno de estos términos, no utilices el Bot.
+            1. Aceptación de los Términos: Al utilizar el bot de Discord &quot;Roxy Migurdia&quot; (en adelante, &quot;el Bot&quot;), aceptas estos Términos de Servicio. Si no estás de acuerdo con alguno de estos términos, no utilices el Bot.
           </p>
           <p className="mb-4">
             2. Recopilación y Uso de Datos: Datos Recopilados: El Bot puede guardar información como mensajes enviados y datos de usuario asociados con los comandos utilizados. Uso de Datos: Los datos recopilados se utilizan para proporcionar y mejorar las funcionalidades del Bot. No compartiremos estos datos con terceros, salvo que sea requerido por la ley o para cumplir con las políticas de Discord.
@@ -20,7 +20,7 @@ export default function Terms() {
             4. Cambios en los Términos: Podemos modificar estos Términos de Servicio en cualquier momento. La continuación del uso del Bot después de la publicación de cambios se considerará como aceptación de dichos cambios.
           </p>
           <p className="mb-4">
-            5. Limitación de Responsabilidad: El Bot se proporciona "tal cual" y no ofrecemos garantías sobre su funcionamiento o disponibilidad. No seremos responsables de ningún daño directo o indirecto que pueda surgir del uso del Bot.
+            5. Limitación de Responsabilidad: El Bot se proporciona &quot;tal cual&quot; y no ofrecemos garantías sobre su funcionamiento o disponibilidad. No seremos responsables de ningún daño directo o indirecto que pueda surgir del uso del Bot.
           </p>
           <p className="mb-4">
             6. Contacto: Para cualquier pregunta sobre estos Términos de Servicio, puedes contactarnos a través del servidor de soporte del Bot o mediante mensaje directo en Discord.
