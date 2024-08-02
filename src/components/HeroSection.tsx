@@ -34,15 +34,14 @@ export function HeroSection() {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-4">
             <h2 className="text-4xl md:text-5xl font-bold text-center md:text-left">
-              Powerful Discord Bot
+              Roxy Migurdia
             </h2>
             <p className="text-lg md:text-xl text-center md:text-left">
-              Enhance your Discord server with our feature-rich bot. Moderate,
-              entertain, and connect with your community.
+            Mejora tu servidor de Discord con nuestro bot repleto de funciones. Socializa, entretiene y conecta con tu comunidad.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <a
-                href="https://discord.gg/ezpav25Bw6"
+                href="https://discord.com/oauth2/authorize?client_id=1041343250797183026"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -56,11 +55,11 @@ export function HeroSection() {
                     height={24}
                     alt="Discord"
                   />
-                  Invite Bot
+                  Invita a Roxy Migurida
                 </Button>
               </a>
               <a
-                href="https://discord.gg/ezpav25Bw6"
+                href="https://discord.gg/Cyz4UCf39B"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -74,7 +73,7 @@ export function HeroSection() {
                     height={24}
                     alt="Discord"
                   />
-                  Join Support Server
+                  Servidor de soporte!
                 </Button>
               </a>
             </div>

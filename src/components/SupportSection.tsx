@@ -31,9 +31,9 @@ export function SupportSection() {
     <section id="support" className="py-12 md:py-24 lg:py-32 bg-muted">
       <div className="container mx-auto px-4 md:px-6">
         <div className="space-y-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold">Join Our Support Server</h2>
+          <h2 className="text-3xl md:text-4xl font-bold">Nuestro servidor de soporte</h2>
           <p className="text-lg md:text-xl text-muted-foreground">
-            Get help, provide feedback, and connect with our community.
+            Obten ayuda, da ideas y conecta con la comunidad!
           </p>
             <Button className="w-full sm:w-auto mx-auto flex items-center gap-2">
               <Image
@@ -42,8 +42,8 @@ export function SupportSection() {
                 height={24}
                 alt="Discord"
               />
-                <a href="https://discord.gg/ezpav25Bw6" target="_blank" rel="noopener noreferrer">
-                  Join Support Server
+                <a href="https://discord.gg/Cyz4UCf39B" target="_blank" rel="noopener noreferrer">
+                  Servidor de Soporte!
                 </a>
             </Button>
         </div>
