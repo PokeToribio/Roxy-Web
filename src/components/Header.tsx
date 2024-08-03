@@ -15,16 +15,16 @@ interface NavLinksProps {
 const NavLinks: React.FC<NavLinksProps> = ({ className = "", onClick }) => (
   <>
     <Link href="#home" className={`hover:underline ${className}`} prefetch={false} onClick={onClick}>
-      Home
+      Inicio
     </Link>
     <Link href="#features" className={`hover:underline ${className}`} prefetch={false} onClick={onClick}>
-      Features
+    Características
     </Link>
     <Link href="#commands" className={`hover:underline ${className}`} prefetch={false} onClick={onClick}>
-      Commands
+      Comandos
     </Link>
     <Link href="#support" className={`hover:underline ${className}`} prefetch={false} onClick={onClick}>
-      Support
+      Soporte
     </Link>
   </>
 );
