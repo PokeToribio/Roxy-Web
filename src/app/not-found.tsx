@@ -9,7 +9,7 @@ const Custom404 = () => {
         ¡Vaya! La página que buscas se ha extraviado. Roxy está en una misión para rastrearla.
       </p>
       <Image
-        src="/404.png"
+        src="https://qiasvyigtpxlonlmrais.supabase.co/storage/v1/object/public/bot/images/web/404.png"
         alt="Roxy Migurdia Investigando"
         width={1000}     // Ajusta el ancho para hacerlo más grande
         height={750}     // Ajusta la altura proporcionalmente
