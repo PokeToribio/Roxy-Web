@@ -17,16 +17,17 @@ interface StatsData {
 const fetchStats = async (): Promise<StatsData> => {
   try {
     const { data, error } = await supabase
-      .from<CommandUsage>('command_usage')
+      .from('command_usage')
       .select('user_id, command_name');
 
-    if (error) throw new Error(error.message);
+    if (error || !data) throw new Error(error?.message || 'No data available');
 
     const users = new Set<string>();
     const userUsage: { [key: string]: number } = {};
     const commandUsage: { [key: string]: number } = {};
 
-    data?.forEach(({ user_id, command_name }) => {
+    data.forEach((row: CommandUsage) => {
+      const { user_id, command_name } = row;
       users.add(user_id);
       userUsage[user_id] = (userUsage[user_id] || 0) + 1;
       commandUsage[command_name] = (commandUsage[command_name] || 0) + 1;
