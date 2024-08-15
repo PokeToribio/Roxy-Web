@@ -14,11 +14,11 @@ interface NavLinksProps {
 
 const NavLinks: React.FC<NavLinksProps> = ({ className = "", onClick }) => (
   <>
-    <Link href="#home" className={`hover:underline ${className}`} prefetch={false} onClick={onClick}>
+    <Link href="/" className={`hover:underline ${className}`} prefetch={false} onClick={onClick}>
       Inicio
     </Link>
     <Link href="#features" className={`hover:underline ${className}`} prefetch={false} onClick={onClick}>
-    Características
+      Características
     </Link>
     <Link href="#commands" className={`hover:underline ${className}`} prefetch={false} onClick={onClick}>
       Comandos
@@ -39,17 +39,24 @@ export function Header() {
   const handleLinkClick = (e: MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     const href = e.currentTarget.getAttribute("href");
+    
     if (href) {
-      const targetElement = document.querySelector(href) as HTMLElement;
-      const offsetTop = targetElement?.offsetTop || 0;
+      // Check if the href is an internal anchor
+      if (href.startsWith("#")) {
+        const targetElement = document.querySelector(href) as HTMLElement;
+        const offsetTop = targetElement?.offsetTop || 0;
 
-      window.scroll({
-        top: offsetTop,
-        behavior: "smooth",
-      });
+        window.scroll({
+          top: offsetTop,
+          behavior: "smooth",
+        });
 
-      if (isMenuOpen) {
-        setIsMenuOpen(false);
+        if (isMenuOpen) {
+          setIsMenuOpen(false);
+        }
+      } else {
+        // Handle external/internal page navigation
+        window.location.href = href;
       }
     }
   };
