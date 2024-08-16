@@ -33,14 +33,24 @@ const fetchStats = async (): Promise<StatsData> => {
       commandUsage[command_name] = (commandUsage[command_name] || 0) + 1;
     });
 
+    // Ordenar userUsage de mayor a menor
+    const sortedUserUsage = Object.fromEntries(
+      Object.entries(userUsage).sort(([, a], [, b]) => b - a)
+    );
+
+    // Ordenar commandUsage de mayor a menor
+    const sortedCommandUsage = Object.fromEntries(
+      Object.entries(commandUsage).sort(([, a], [, b]) => b - a)
+    );
+
     return {
       totalUsers: users.size,
-      userUsage,
-      commandUsage,
+      userUsage: sortedUserUsage,
+      commandUsage: sortedCommandUsage,
     };
   } catch (error) {
     console.error('Error fetching stats:', error);
-    throw error; // Re-lanzar el error para que el componente pueda manejarlo
+    throw error;
   }
 };
 
@@ -80,7 +90,7 @@ const StatsPage = () => {
           <ul className="list-disc pl-5">
             {Object.entries(stats?.userUsage || {}).map(([userId, count]) => (
               <li key={userId} className="mb-2">
-                ID de usuario: {userId} - Veces totales que a usado comandos: {count}
+                ID de usuario: {userId} - Veces totales que ha usado comandos: {count}
               </li>
             ))}
           </ul>
